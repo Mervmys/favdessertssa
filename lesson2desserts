@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Favorite Desserts</title>
+</head>
+<body>
+    <h1>My Favorite Desserts</h1>
+    <ol>
+        <li>
+            Cake 
+            <img src="c:\Users\merve\OneDrive\Masaüstü\slice of cake.jpg" width="200" alt="A slice of chocolate cake">
+        </li>
+        <li>
+            Ice Cream 
+            <img src="c:\Users\merve\OneDrive\Masaüstü\ice cream.jpg" width="200" alt="A vanilla ice cream cone">
+        </li>
+        <li>
+            Donut 
+            <img src="c:\Users\merve\OneDrive\Masaüstü\donut.jpg" width="200" alt="A chocolate glazed donut">
+        </li>
+    </ol>
+</body>
+</html>
