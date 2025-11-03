@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="*" method="post">
+        <h2>Movie Preference Form</h2>
+        Your email addres:<input type="email" name="email_address" required> <br></br>
+        Year Of Birth: <input type="number" name="birth_year" min="1900" max="2025"> <br><br>
+    
+    **Favorite Movie Types (Pick more than one):** <br>
+    <input type="checkbox" name="genre[]" value="action"> Action
+    <input type="checkbox" name="genre[]" value="Comedy"> Comedy
+    <input type="checkbox" name="genre[]" value="Science Fiction"> Science Fiction
+    <input type="checkbox" name="genre[]" value="Romantic Comedy"> Romantic Comedy <br><br>
+
+   Your Favorite Director:
+    <select name="director">
+        <option value="" disabled selected>Please Choose</option>
+        <option value="christopher_nolan">Christopher Nolan</option>
+        <option value="quentin_tarantino">Quentin Tarantino</option>
+        <option value="steven_spielberg">Steven Spielberg</option>
+        <option value="yagmur_taylan">Yağmur Taylan</option>
+    </select> <br><br>
+
+   Additional Comments (Comment): <br>
+    <textarea name="user_comment" cols="40" rows="5" placeholder="Enter your comment..."></textarea> <br><br>
+    
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+</body>
+</html>
