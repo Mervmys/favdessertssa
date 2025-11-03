@@ -3,61 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie List</title>
-    <style>
-      table, td, tr, th {
-            border: 1px solid black;
-            border-collapse: collapse; 
-            padding: 8px; 
-            text-align: center; 
-        }
-        th {
-            background-color: #f2f2f2; 
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <h1> Best Movies List</h1>
+    <form action="*" method="post">
+        <h2>Movie Preference Form</h2>
+        Your email addres:<input type="email" name="email_address" required> <br></br>
+        Year Of Birth: <input type="number" name="birth_year" min="1900" max="2025"> <br><br>
     
-    <table>
-        <tr>
-            <th>Movie Poster</th>    
-            <th>Movie Name</th>
-            <th>Director</th>
-            <th>Release Year</th>
-            <th>IMDb Rating</th>
-        </tr>
-        
-        <tr>
-            <td><img src="2010-inception-movie-inception-poster-wallpaper-preview.jpg" alt="Inception Poster" width="100"></td>
-            <td>Inception</td>
-            <td>Christopher Nolan</td>
-            <td>2010</td>
-            <td>8.8</td>
-        </tr>
-        
-        <tr>
-            <td><img src="MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_.jpg" alt="The Shawshank Redemption Poster" width="100"></td>
-            <td>The Shawshank Redemption</td>
-            <td>Frank Darabont</td>
-            <td>1994</td>
-            <td>9.3</td>
-        </tr>
-        
-        <tr>
-            <td><img src="MV5BYjk1Y2U4MjQtY2ZiNS00OWQyLWI3MmYtZWUwNmRjYWRiNWNhXkEyXkFqcGc@._V1_.jpg" alt="Parasite Poster" width="100"></td>
-            <td>Parasite</td>
-            <td>Bong Joon Ho</td>
-            <td>2019</td>
-            <td>8.5</td>
-        </tr>
-        
-        <tr>
-            <td><img src="81B3U3Rv+hL._AC_UF1000,1000_QL80_.jpg" alt="The Godfather Poster" width="100"></td>
-            <td>The Godfather</td>
-            <td>Francis Ford Coppola</td>
-            <td>1972</td>
-            <td>9.2</td>
-        </tr>
-    </table>
+    **Favorite Movie Types (Pick more than one):** <br>
+    <input type="checkbox" name="genre[]" value="action"> Action
+    <input type="checkbox" name="genre[]" value="Comedy"> Comedy
+    <input type="checkbox" name="genre[]" value="Science Fiction"> Science Fiction
+    <input type="checkbox" name="genre[]" value="Romantic Comedy"> Romantic Comedy <br><br>
+
+   Your Favorite Director:
+    <select name="director">
+        <option value="" disabled selected>Please Choose</option>
+        <option value="christopher_nolan">Christopher Nolan</option>
+        <option value="quentin_tarantino">Quentin Tarantino</option>
+        <option value="steven_spielberg">Steven Spielberg</option>
+        <option value="yagmur_taylan">Yağmur Taylan</option>
+    </select> <br><br>
+
+   Additional Comments (Comment): <br>
+    <textarea name="user_comment" cols="40" rows="5" placeholder="Enter your comment..."></textarea> <br><br>
+    
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
 </body>
 </html>
